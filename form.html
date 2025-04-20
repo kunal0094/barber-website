@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- -------------form--------------------
+    -->
+    <div class="container">
+      <h1 class="text-center my-3 text-success">Appointment Form</h1>
+      <form action="index.php" method="post">
+        <div class="mb-3 mt-3">
+          <label for="exampleInputEmail1" class="form-label text-success fs-5"
+            >Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            autocomplete="off"
+            placeholder="Enter your name"
+            required="required"
+          />
+        </div>
+        <div class="mb-3">
+          <label
+            for="exampleInputPassword1 "
+            class="form-label text-success fs-5"
+            >E-mail</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Enter your E-mail"
+            required="required"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputGroupSelect03 " class="form-label text-success fs-5"
+            >Cutting Name</label
+          >
+          <select
+            class="form-select"
+            id="inputGroupSelect03"
+            aria-label="Example select with button addon"
+            required="requied"
+          >
+            <option selected>Choose...</option>
+            <option value="1">Hair Styling</option>
+            <option value="2">Beard Trim</option>
+            <option value="3">Hair Cut</option>
+            <option value="3">Dry Shapoo</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="Time" class="form-label text-success fs-5">Time</label>
+          <input
+            type="time"
+            class="form-control"
+            id="Time"
+            placeholder="Enter your E-mail"
+            required="required"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="Date" class="form-label text-success fs-5">Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="Date"
+            placeholder="Enter your E-mail"
+            required="required"
+          />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <script>
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", () => {
+        alert("Data is submitting");
+      });
+    </script>
+  </body>
+</html>

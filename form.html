@@ -18,7 +18,7 @@
     -->
     <div class="container">
       <h1 class="text-center my-3 text-success">Appointment Form</h1>
-      <form action="index.php" method="post">
+      <form method="post" action="Submite.html">
         <div class="mb-3 mt-3">
           <label for="exampleInputEmail1" class="form-label text-success fs-5"
             >Name</label
@@ -89,8 +89,19 @@
     </div>
     <script>
       let btn = document.querySelector("button");
+
       btn.addEventListener("click", () => {
-        alert("Data is submitting");
+        let a = document.getElementById("exampleInputEmail1").value;
+        let b = document.getElementById("exampleInputPassword1").value;
+        let c = document.getElementById("inputGroupSelect03").value;
+        let d = document.getElementById("Time").value;
+        let e = document.getElementById("Date").value;
+
+        if (a == "" || b == "" || c == "" || d == "" || e == "") {
+          alert("All Fields are mendatory");
+        } else {
+          alert("Data is submitted");
+        }
       });
     </script>
   </body>
